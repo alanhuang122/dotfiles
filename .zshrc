@@ -36,15 +36,12 @@ alias xxd='xxd -g 1'
 alias python='python3'
 alias pip='pip3'
 
-alias sopels='~/sopel/bin/python ~/sopel/sopel.py -c default.cfg&'
-alias sopelo='~/sopel/bin/python ~/sopel/sopel.py -c oftc.cfg&'
-
 alias git='export GPG_TTY=$(tty); git'
 
 alias config='git --git-dir=$HOME/.cfg --work-tree=$HOME'
 
 if [[ -z "$TMUX" ]] && [ "$SSH_CONNECTION" != "" ]; then
-    tmux attach-session -t serenade || tmux new-session -s serenade
+    tmux attach-session -t $HOST || tmux new-session -s $HOST
 fi
 
 export LD_LIBRARY_PATH=/usr/local/lib
