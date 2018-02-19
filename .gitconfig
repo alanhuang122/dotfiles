@@ -1,0 +1,7 @@
+[user]
+	email = Alan.Huang@utdallas.edu
+	name = Alan Huang
+[push]
+	default = simple
+[commit]
+	gpgsign = true
