@@ -1,7 +1,9 @@
 [user]
-	email = Alan.Huang@utdallas.edu
-	name = Alan Huang
+    email = Alan.Huang@utdallas.edu
+    name = Alan Huang
 [push]
-	default = simple
+    default = simple
 [commit]
-	gpgsign = true
+    gpgsign = true
+[merge]
+    conflictstyle = diff3
